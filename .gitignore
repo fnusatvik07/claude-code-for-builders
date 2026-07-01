@@ -1,0 +1,10 @@
+# deck render artifacts (the .pptx is the tracked deliverable)
+slides/*.pdf
+slides/*.jpg
+slides/qa-*.jpg
+slides/f-*.jpg
+.DS_Store
+node_modules/
+
+# PowerPoint/Office lock files
+~$*
