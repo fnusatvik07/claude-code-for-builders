@@ -187,6 +187,14 @@ function keyRows(slide, x, y, w, rows, keyW, accent) {
   });
 })();
 
+// S3b — HOW IT WORKS (architecture diagram)
+(() => {
+  const s = content("how-claude-code-works.drawio");
+  // the exported diagram carries its own title; show it large and centered
+  s.addImage({ path: "assets/how-claude-code-works.png", x: 2.10, y: 0.95, w: 5.80, h: 4.21 });
+  s.addShape(pres.shapes.RECTANGLE, { x: 2.10, y: 0.95, w: 5.80, h: 4.21, fill: { color: BG, transparency: 100 }, line: { color: BORDER, width: 1.25 } });
+})();
+
 // =====================================================================
 // PART 1 — SET UP & GET ORIENTED
 // =====================================================================

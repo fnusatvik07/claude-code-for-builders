@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="How Claude Code Works" id="how-cc-works">
+    <mxGraphModel dx="1000" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="820" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="How Claude Code Works" style="text;html=1;align=center;fontSize=30;fontStyle=1;fontColor=#22201D;" vertex="1" parent="1">
+          <mxGeometry x="150" y="26" width="900" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="It reads your files, runs commands, and edits your code, all from your terminal." style="text;html=1;align=center;fontSize=15;fontColor=#6B655C;" vertex="1" parent="1">
+          <mxGeometry x="150" y="70" width="900" height="24" as="geometry" />
+        </mxCell>
+
+        <mxCell id="model" value="&lt;b style='font-size:17px'&gt;Claude model&lt;/b&gt;&lt;br&gt;&lt;font color='#5B6672' style='font-size:12px'&gt;the brain: reasons about your task&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAEFF5;strokeColor=#5B7DA6;strokeWidth=2;fontColor=#25303B;fontSize=14;verticalAlign=middle;align=center;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="450" y="110" width="300" height="86" as="geometry" />
+        </mxCell>
+
+        <mxCell id="you" value="&lt;b&gt;You&lt;/b&gt;&lt;br&gt;the developer" style="image;html=1;image=img/lib/mscae/Person.svg;verticalLabelPosition=bottom;verticalAlign=top;fontSize=13;fontColor=#22201D;" vertex="1" parent="1">
+          <mxGeometry x="80" y="392" width="56" height="66" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cc" value="&lt;b style='font-size:19px'&gt;Claude Code&lt;/b&gt;&lt;br&gt;&lt;font color='#9A5B41' style='font-size:12px'&gt;runs in your terminal · the agent&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBEDE7;strokeColor=#D97757;strokeWidth=2.5;fontColor=#8A3E22;fontSize=14;verticalAlign=top;align=center;arcSize=6;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="440" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="looplbl" value="The loop, repeats until the task is done" style="text;html=1;align=center;fontSize=12;fontColor=#9A5B41;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="392" width="400" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="g" value="&lt;b&gt;Gather&lt;/b&gt;&lt;br&gt;context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;fontColor=#3A342E;fontSize=12;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="322" y="426" width="118" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a" value="&lt;b&gt;Take&lt;/b&gt;&lt;br&gt;action" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;fontColor=#3A342E;fontSize=12;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="461" y="426" width="118" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v" value="&lt;b&gt;Verify&lt;/b&gt;&lt;br&gt;results" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;fontColor=#3A342E;fontSize=12;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="426" width="118" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ga" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#D97757;fontColor=#555;" edge="1" parent="1" source="g" target="a"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="av" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#D97757;fontColor=#555;" edge="1" parent="1" source="a" target="v"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="ext" value="&lt;b style='font-size:16px'&gt;Extensions&lt;/b&gt;&lt;br&gt;&lt;font color='#4F7A4A' style='font-size:12px'&gt;optional add-ons&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3EA;strokeColor=#6FA06A;strokeWidth=2;fontColor=#3C6B37;fontSize=14;verticalAlign=top;align=center;arcSize=6;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="800" y="300" width="340" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mcp" value="&lt;b&gt;MCP servers&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6FA06A;fontColor=#33422F;fontSize=13;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="828" y="360" width="284" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="extdata" value="&lt;b&gt;External tools and data&lt;/b&gt;&lt;br&gt;&lt;font color='#5E5E5E'&gt;databases, the web, Slack&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6FA06A;fontColor=#33422F;fontSize=13;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="828" y="448" width="284" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="me" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#6FA06A;" edge="1" parent="1" source="mcp" target="extdata"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="perm" value="&lt;b&gt;Permissions&lt;/b&gt;&lt;br&gt;asks first" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#FBEED0;strokeColor=#D9A441;fontColor=#6E5210;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="600" width="120" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="proj" value="&lt;b&gt;Your project and your machine&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F4F5;strokeColor=#9AA5AD;strokeWidth=2;fontColor=#3B434A;fontSize=14;verticalAlign=top;align=center;arcSize=6;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="170" y="686" width="700" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="files" value="&lt;b&gt;Files&lt;/b&gt;&lt;br&gt;&lt;font color='#5E5E5E'&gt;read and edit code&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9AA5AD;fontColor=#333;fontSize=13;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="196" y="720" width="200" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="term" value="&lt;b&gt;Terminal and Git&lt;/b&gt;&lt;br&gt;&lt;font color='#5E5E5E'&gt;run tests, builds, commits&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9AA5AD;fontColor=#333;fontSize=13;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="420" y="720" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="mem" value="&lt;b&gt;CLAUDE.md&lt;/b&gt;&lt;br&gt;&lt;font color='#5E5E5E'&gt;project memory&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9AA5AD;fontColor=#333;fontSize=13;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="654" y="720" width="192" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e_you" value="asks in plain English" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#8A8A8A;fontColor=#555;fontSize=12;" edge="1" parent="1" source="you" target="cc"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_model" value="reasons about the task" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;startArrow=block;strokeColor=#5B7DA6;fontColor=#3A506B;fontSize=12;" edge="1" parent="1" source="cc" target="model"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ext" value="connect via MCP" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#6FA06A;fontColor=#3C6B37;fontSize=12;" edge="1" parent="1" source="cc" target="ext"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_perm" value="read, run, edit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#8A8A8A;fontColor=#555;fontSize=12;" edge="1" parent="1" source="cc" target="perm"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_proj" value="after you approve" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#D9A441;fontColor=#6E5210;fontSize=12;" edge="1" parent="1" source="perm" target="proj"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
